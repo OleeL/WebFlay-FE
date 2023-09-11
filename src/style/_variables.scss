@@ -1,0 +1,57 @@
+@function darken($color, $amount: 20) {
+    @return mix(black, $color, $amount);
+}
+
+$themes: (
+    light: (
+        bg-container-color: #bcbcbc,
+        bg-color: #d9d9d9,
+        theme-color: #998144,
+        divider-color: #998144,
+        p-color: black,
+        h1-color: black,
+        h2-color: black,
+        info-color: black,
+        a-color: black,
+        error: #e20000,
+        success: #05be05,
+        warning: #bebe05,
+        brand-color-1: #353535,
+        brand-color-2: #81affe,
+        brand-color-3: white,
+        brand-color-4: #9a9a9a,
+        brand-color-5: #a3a3a3,
+        brand-color-6: #bdbdbd,
+        brand-color-7: #6f6f6f,
+    ),
+    dark: (
+        bg-container-color: #1f1f1f,
+        bg-color: black,
+        theme-color: #998144,
+        divider-color: #998144,
+        p-color: #b5b5b5,
+        h1-color: #9a9a9a,
+        h2-color: #9a9a9a,
+        info-color: #9a9a9a,
+        a-color: #9a9a9a,
+        error: #e20000,
+        success: #05be05,
+        warning: #bebe05,
+        brand-color-1: #353535,
+        brand-color-2: #81affe,
+        brand-color-3: white,
+        brand-color-4: #9a9a9a,
+        brand-color-5: #a3a3a3,
+        brand-color-6: #bdbdbd,
+        brand-color-7: #6f6f6f,
+    ),
+);
+
+@function get($property) {
+    @return map-get(map-get($themes, dark), $property);
+}
+
+$size-h1: 3.25rem;
+$size-h2: 1.5rem;
+$size-subtitle: 1rem;
+$size-normal: 0.5em;
