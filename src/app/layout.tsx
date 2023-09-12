@@ -1,6 +1,9 @@
 import '@/style/globals.scss';
 import '@/style/main.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap';
+
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { Inter } from 'next/font/google';
 
