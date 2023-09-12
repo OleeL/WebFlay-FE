@@ -5,7 +5,6 @@ import { SearchEngine, searchEngineNames, searchEngines } from '@/utils/enums';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock, faUnlock } from '@fortawesome/free-solid-svg-icons';
 import { ordinalSuffixOf } from '@/utils/numbers';
-import { useMemo } from 'react';
 import { ClipLoader } from 'react-spinners';
 import ConfettiExplosion from 'react-confetti-explosion';
 import styles from '../../style/scrape.module.scss';
@@ -22,7 +21,6 @@ const Scrape = () => {
 		setSearchTerm,
 		url,
 		setUrl,
-		results,
 		searchEngine,
 		setSearchEngine,
 		urlDisabled,
